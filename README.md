@@ -10,6 +10,8 @@
     stdin_open: true
     networks:
       - dns_subnet
+	dns:
+      - 172.28.5.1
 ```
 ## 3. Levantamos los servicios e instalamos la herramienta "dig" en el cliente
 ```console

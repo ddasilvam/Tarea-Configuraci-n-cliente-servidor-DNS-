@@ -22,7 +22,6 @@ services:
       - dns_subnet
     dns:
       - 172.28.5.1
-      - 8.8.8.8
 networks:
   dns_subnet:
     external: true
