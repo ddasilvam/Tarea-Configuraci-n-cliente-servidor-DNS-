@@ -13,6 +13,15 @@ services:
     volumes:
       - ./conf:/etc/bind
       - ./zonas:/var/lib/bind
+  asir_cliente:
+    container_name: asir_cliente
+    image: alpine:latest
+    tty: true
+    stdin_open: true
+    networks:
+      - dns_subnet
 networks:
   dns_subnet:
     external: true
+
+  
