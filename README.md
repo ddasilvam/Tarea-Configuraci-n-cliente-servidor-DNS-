@@ -5,7 +5,7 @@
 ```console
   asir_cliente:
     container_name: asir_cliente
-    image: alpine:latest
+    image: ubuntu:latest
     tty: true
     stdin_open: true
     networks:
