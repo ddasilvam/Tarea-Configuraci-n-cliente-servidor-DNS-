@@ -21,3 +21,8 @@ Una vez arrancado el servidor DNS y el cliente, abrimos una shell en el cliente 
 ```console
 apk add --no-cache bind-tools
 ```
+## 4. Añadimos por cuestiones de retrocompatibilidad el servidor DNS en el fichero /etc/resolv.conf
+Introducimos el siguiente comando en una shell del cliente:
+```console
+echo "nameserver 172.28.5.1" > /etc/resolv.conf
+```
